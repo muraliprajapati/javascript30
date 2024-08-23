@@ -1,0 +1,58 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+.clock-face {
+  position: relative;
+  width: 512px;
+  height: 512px;
+  border: 20px solid white;
+  border-radius: 50%;
+}
+
+.hand {
+  width: 220px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+
+.hand-hr {
+  width: 140px;
+  background-color: white;
+  height: 12px;
+}
+
+.hand-min {
+  width: 200px;
+  height: 8px;
+  background-color: gold;
+  z-index: -1;
+}
+
+.hand-sec {
+  background-color: red;
+  height: 4px;
+  z-index: -1;
+}
+
+.day {
+  font-size: 32px;
+  color: white;
+  margin: 16px 0px;
+}
+
+.time {
+  font-size: 24px;
+  color: white;
+}
